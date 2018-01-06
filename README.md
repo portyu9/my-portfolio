@@ -1,4 +1,4 @@
-# Yunior Portal's portfolio
+# Ƴunior Ƥortal's portfolio
 
 This is my professional portfolio. It uses AWS and ReactJS.
 
@@ -6,3 +6,7 @@ This is my professional portfolio. It uses AWS and ReactJS.
 
 Git & GitHUB
 SSH
+HTML
+CSS
+Font Awesome
+Google Fonts
