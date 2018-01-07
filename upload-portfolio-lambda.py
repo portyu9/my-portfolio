@@ -19,20 +19,22 @@ def lambda_handler(event, context):
             for artifact in job["data"]["inputArtifacts"]:
                 if artifact ["name"] == "MyAppBuild":
                     location = artifact["location"]["s3Location"]
-
         print "Building portfolio from " + str(location)
 
         s3= boto3.resource('s3', config=Config(signature_version='s3v4'))
+        print "Set signature_version"
 
-        portfolio_bucket= s3.Bucket(location["bucketName"])
+        portfolio_bucket= s3.Bucket('portfolio.yunior-portal.com')
         build_bucket= s3.Bucket(location["bucketName"])
 
         portfolio_zip= StringIO.StringIO()
         build_bucket.download_fileobj(location["objectKey"], portfolio_zip)
+        print "Downloaded zip from " + str(location)
 
         with zipfile.ZipFile(portfolio_zip) as myzip:
             for nm in myzip.namelist():
                 obj= myzip.open(nm)
+                print "Opened zip"
                 portfolio_bucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
 
