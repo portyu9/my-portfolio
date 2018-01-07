@@ -3,35 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>React Demo</title>
+  <link rel="stylesheet" href="https://unpkg.com/mocha@4.1.0/mocha.css">
   <style media="screen">
-  .messageBox {
-    border: 1px solid;
-    margin: 1em;
-    padding: 2em;
-  }
-  .error {
-    border-color: red;
-    background-color: #eebbbb;
-  }
-  .success {
-    border-color: blue;
-    background-color: #bbbbee;
-  }
-  .default {
-    border-color: green;
-    background-color: #bbeebb;
-  }
-  .hidden {
-    display: none;
-  }
+    .messageBox {
+      border: 1px solid;
+      margin: 1em;
+      padding: 2em;
+    }
+    .error {
+      border-color: red;
+      background-color: #eebbbb;
+    }
+    .success {
+      border-color: blue;
+      background-color: #bbbbee;
+    }
+    .default {
+      border-color: green;
+      background-color: #bbeebb;
+    }
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
 
 <body>
   <main id="content"></main>
+  <div id="mocha"></div>
+
   <script src="https://unpkg.com/babel-standalone"></script>
   <script type="text/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
   <script type="text/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/chai@4.1.2/chai.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/mocha@4.1.0/mocha.js"></script>
 
   <script type="text/babel" data-presets='react'>
 
@@ -64,7 +69,7 @@
       return (
         <div>
         <label>Enter your Name : <input ref="nameInput" type="text"/></label>
-        <button onClick={this.buttonClicked}>Submit</button>
+        <button id="inputButton" onClick={this.buttonClicked}>Submit</button>
 
         <MessageBox type={msg.type} message={msg.body}/>
 
@@ -85,13 +90,57 @@
 
 
   ReactDOM.render(<NameInput />, document.getElementById('content'));
+  </script>
+
+  <script type="text/babel" data-presets="react">
+
+  const assert = chai.assert;
+
+  mocha.ui("bdd");
+  mocha.reporter("html");
+
+//describe SUITE
+  describe("Example Tests", () => {
+    //test#1
+    it("Proved that math works", () => {
+      assert.equal(5, 3+2, "Math works with Code!");
+      assert.notEqual(3+2, 6, "Math STILL works with Code!");
+      assert.closeTo(Math.PI,3,.2, "PI is close to 3 by at least .2");
+    });
+    //test#2
+    it("Found our Component", () => {
+      assert.isDefined(MessageBox, "Message Box Component is defined");
+    });
+    //test#3
+    it("Test the Greet function", () => {
+      let myName = "Yunior";
+      const greet = (name) => "Hello, " + name + "!";
+      assert.include(greet(myName), myName, "Greeting includes name");
+    });
+  });
+
+  describe("Document Tests", () => {
+    it("Rendered an empty messageBox", () => {
+      let msgBox = document.querySelector(".messageBox");
+      assert.isDefined(msgBox, "MessageBox is Present!");
+      assert.include(msgBox.classList.value, "hidden", "Message Box is hidden");
+      assert.equal(msgBox.innerText, "", "Message Box is empty");
+    });
+    it("Rendered an error when name is empty", () => {
+      let msgBox = document.querySelector(".messageBox");
+      let button = document.querySelector("#inputButton");
+      button.click();
+      assert.include(msgBox.classList.value, "error", "Message Box type ERROR");
+    })
+
+  })
+
+  mocha.run();
+
+
 
 
   </script>
-
-
-
-
   The content of the document......
 </body>
 
