@@ -14,4 +14,4 @@ artifacts:
     - styles/*
     - images/*
     - dist/bundle.js
-    - .pdf
+    - YPresume.pdf
