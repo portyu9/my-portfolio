@@ -9,7 +9,11 @@ Asset Management & Bundling: Webpack
 Package Management: NPM
 Testing: Jest, Chai & Mocha
 AWS - Hosted Serverless
+<<<<<<< HEAD
 Lambda
+=======
+Lambda 
+>>>>>>> 2596f95e461160f8e9f5d9d13d18426f08ac189f
 Route53
 CloudFrontS3
 CodeBuild
