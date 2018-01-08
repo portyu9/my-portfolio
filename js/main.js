@@ -4,9 +4,32 @@ import ExampleWork from './example-work';
 
 const myWork = [
   {
-    'title': "AWS Certified",
+    'title': "About My Portfolio",
     'href': "https://example.com",
-    'desc': "Long Description",
+    'desc': `# Ƴunior Ƥortal's portfolio
+
+    This is my professional portfolio. It uses AWS and ReactJS.
+
+    ## Technologies Used:
+    UI: React
+    Cross-Browser Compatibility: Babel
+    Asset Management & Bundling: Webpack
+    Package Management: NPM
+    Testing: Jest, Chai & Mocha
+    AWS - Hosted Serverless
+    Lambda
+    Route53
+    CloudFrontS3
+    CodeBuild
+    CodePipeline
+    Python
+    Node.js
+    Git & GitHUB
+    SSH
+    HTML/JS
+    CSS
+    Font Awesome
+    Google Fonts`,
     'image': {
       'desc':"description of work 1",
       'src': "images/example1.png",

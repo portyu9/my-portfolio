@@ -5,26 +5,26 @@
   <title>React Demo</title>
   <link rel="stylesheet" href="https://unpkg.com/mocha@4.1.0/mocha.css">
   <style media="screen">
-    .messageBox {
-      border: 1px solid;
-      margin: 1em;
-      padding: 2em;
-    }
-    .error {
-      border-color: red;
-      background-color: #eebbbb;
-    }
-    .success {
-      border-color: blue;
-      background-color: #bbbbee;
-    }
-    .default {
-      border-color: green;
-      background-color: #bbeebb;
-    }
-    .hidden {
-      display: none;
-    }
+  .messageBox {
+    border: 1px solid;
+    margin: 1em;
+    padding: 2em;
+  }
+  .error {
+    border-color: red;
+    background-color: #eebbbb;
+  }
+  .success {
+    border-color: blue;
+    background-color: #bbbbee;
+  }
+  .default {
+    border-color: green;
+    background-color: #bbeebb;
+  }
+  .hidden {
+    display: none;
+  }
   </style>
 </head>
 
@@ -60,6 +60,18 @@
           type: name ? "success" : "error",
           body: name ? "Welcome to ReactJS, "+ name : "Please Enter Name"
         }
+        function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  }
+
+  return (
+    <a href="#" onClick={handleClick}>
+      Click me
+    </a>
+  );
+}
       });
 
     }
@@ -92,6 +104,7 @@
   ReactDOM.render(<NameInput />, document.getElementById('content'));
   </script>
 
+
   <script type="text/babel" data-presets="react">
 
   const assert = chai.assert;
@@ -99,7 +112,7 @@
   mocha.ui("bdd");
   mocha.reporter("html");
 
-//describe SUITE
+  //describe SUITE
   describe("Example Tests", () => {
     //test#1
     it("Proved that math works", () => {
@@ -141,7 +154,9 @@
 
 
   </script>
-  The content of the document......
+
+
+
 </body>
 
 </html>
