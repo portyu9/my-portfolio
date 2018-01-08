@@ -5,6 +5,8 @@ import ExampleWork from './example-work';
 const myWork = [
   {
     'title': "AWS Certified",
+    'href': "https://example.com",
+    'desc': "Long Description",
     'image': {
       'desc':"description of work 1",
       'src': "images/example1.png",
@@ -15,6 +17,8 @@ const myWork = [
     'title': `I
     ♥
     AWS!`,
+    'href': "https://example.com",
+    'desc': "Long Description",
     'image': {
       'desc':"description of work 2",
       'src': "images/example2.png",
@@ -25,6 +29,8 @@ const myWork = [
     'title': `Web
     UI
     Automation`,
+    'href': "https://example.com",
+    'desc': "Long Description",
     'image': {
       'desc':"description of work 3",
       'src': "images/example3.png",
