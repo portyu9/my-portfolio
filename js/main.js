@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import ExampleWork from './example-work';
 
 class ExampleDescription extends React.Component {
-  render() {
-    let example = this.props.example;
+	render() {
+		let example = this.props.example;
 
-    const text = `# Ƴunior Ƥortal's portfolio \n
+		const text = `# Ƴunior Ƥortal's portfolio \n
 
     \nThis is my professional portfolio. It uses AWS and ReactJS.\n
 
@@ -30,70 +30,53 @@ class ExampleDescription extends React.Component {
     \nCSS
     \nFont Awesome
     \nGoogle Fonts`;
-    return (
-       <div className="display-linebreak">
-          {text}
-       </div>
-    );
-  }
+		return ( <
+			div className = "display-linebreak" > {
+				text
+			} <
+			/div>
+		);
+	}
 }
 
-const myWork = [
-  {
-    'title': "About My Portfolio",
-    'href': "https://example.com",
-    'desc': `Ƴunior Ƥortal's portfolio \n
-            \nThis is my professional portfolio. It uses AWS and ReactJS.\n
-            \nTechnologies Used:
-            \nUI: React
-            \nCross-Browser Compatibility: Babel
-            \nAsset Management & Bundling: Webpack
-            \nPackage Management: NPM
-            \nTesting: Jest, Chai & Mocha
-            \nAWS - Hosted Serverless
-            \nLambda
-            \nRoute53
-            \nCloudFrontS3
-            \nCodeBuild
-            \nCodePipeline
-            \nPython
-            \nNode.js
-            \nGit & GitHUB
-            \nSSH
-            \nHTML/JS
-            \nCSS
-            \nFont Awesome
-            \nGoogle Fonts`,
-    'image': {
-      'desc':"description of work 1",
-      'src': "images/example1.png",
-      'comment':""
-    }
-  },
-  {
-    'title': `I
-    ♥
-    AWS!`,
-    'href': "https://example.com",
-    'desc': "Long Description",
-    'image': {
-      'desc':"description of work 2",
-      'src': "images/example2.png",
-      'comment':""
-    }
-  },
-  {
-    'title': `Web
-    UI
-    Automation`,
-    'href': "https://example.com",
-    'desc': "Long Description",
-    'image': {
-      'desc':"description of work 3",
-      'src': "images/example3.png",
-      'comment':""
-    }
-  }
-]
+const myWork = [{
+	'title': "My Portfolio On AWS",
+	'href': "https://goo.gl/forms/hrMdiyrgWF1we5Ps1",
+	'desc': "Welcome! to Ƴunior Ƥortal's portfolio. This is my professional portfolio. It uses AWS and ReactJS. Technologies Used: UI: React, Cross-Browser Compatibility: Babel, Asset Management & Bundling: Webpack, Package Management: NPM, Testing: Jest, Chai & Mocha, AWS - Hosted Serverless, Lambda, Route53, CloudFrontS3, CodeBuild, CodePipeline, Python, Node.js, Git & GitHUB, SSH, HTML/JS, CSS, Font Awesome, and Google Fonts.    Click Above to Contact Me!",
+	'image': {
+		'descO': "My Portfolio On AWS",
+		'src': "images/example1.png",
+		'comment': ""
+	}
+}, {
+	'title': `AWS Solutions Architect Certification`,
+	'href': "https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-12-18&ci=AWS00364784",
+	'desc': `I am happy and proud to be part of the Cloud! AWS Certified Solutions Architect.
+   I have extensive love and experience designing distributed applications and systems on the AWS platform including:
+   Designing and deploying scalable, highly available, and fault tolerant systems on AWS
+   Lift and shift of an existing on-premises application to AWS
+   Ingress and egress of data to and from AWS
+   Selecting the appropriate AWS service based on data, compute, database, or security requirements
+   Identifying appropriate use of AWS architectural best practices
+   Estimating AWS costs and identifying cost control mechanisms. I ♥ AWS!`,
+	'image': {
+		'descO': "My Journey in the cloud",
+		'src': "images/example2.png",
+		'comment': ""
+	}
+}, {
+	'title': `My Serverless Chat-Bot / Currency Converter`,
+	'href': "https://slsbot.slack.com",
+	'desc': `My Serverless Chat-Bot / Currency Converter : Please use this syntax (@forex convert 1USD to AUD) when asking Forex(chatbot) to convert your currency.
+    About this ChatBot - Technologies used : The Serverless Framework - AWS Lambda, Slack API, fixer.io, DynamoDB, NodeJS and AWS CLI.`,
+	'image': {
+		'descO': "My Serverless Chat-Bot / Currency Converter",
+		'src': "images/example3.png",
+		'comment': ""
+	}
+}]
 
-ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+ReactDOM.render( < ExampleWork work = {
+			myWork
+		}
+		/>, document.getElementById('example-work'));
