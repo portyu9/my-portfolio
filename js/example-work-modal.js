@@ -30,7 +30,7 @@ class ExampleWorkModal extends React.Component {
 				example.title
 			} <
 			/h2> <
-			a className = "color--skyBlue modal__link"
+			a className = "color--skyBlue modal__link" target="_blank"
 			href = {
 				example.href
 			} >
