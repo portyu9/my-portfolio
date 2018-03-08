@@ -2,42 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ExampleWork from './example-work';
 
-class ExampleDescription extends React.Component {
-	render() {
-		let example = this.props.example;
 
-		const text = `# Ƴunior Ƥortal's portfolio \n
-
-    \nThis is my professional portfolio. It uses AWS and ReactJS.\n
-
-    \n## Technologies Used:
-    \nUI: React
-    \nCross-Browser Compatibility: Babel
-    \nAsset Management & Bundling: Webpack
-    \nPackage Management: NPM
-    \nTesting: Jest, Chai & Mocha
-    \nAWS - Hosted Serverless
-    \nLambda
-    \nRoute53
-    \nCloudFrontS3
-    \nCodeBuild
-    \nCodePipeline
-    \nPython
-    \nNode.js
-    \nGit & GitHUB
-    \nSSH
-    \nHTML/JS
-    \nCSS
-    \nFont Awesome
-    \nGoogle Fonts`;
-		return ( <
-			div className = "display-linebreak" > {
-				text
-			} <
-			/div>
-		);
-	}
-}
 
 const myWork = [{
 	'title': "My Serverless Ƥortfolio On AWS!",
