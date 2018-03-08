@@ -40,11 +40,11 @@ class ExampleDescription extends React.Component {
 }
 
 const myWork = [{
-	'title': "My Portfolio On AWS",
+	'title': "My Serverless Ƥortfolio On AWS!",
 	'href': "https://goo.gl/forms/hrMdiyrgWF1we5Ps1",
-	'desc': "Welcome! to Ƴunior Ƥortal's portfolio. This is my professional portfolio. It uses AWS and ReactJS. Technologies Used: UI: React, Cross-Browser Compatibility: Babel, Asset Management & Bundling: Webpack, Package Management: NPM, Testing: Jest, Chai & Mocha, AWS - Hosted Serverless, Lambda, Route53, CloudFrontS3, CodeBuild, CodePipeline, Python, Node.js, Git & GitHUB, SSH, HTML/JS, CSS, Font Awesome, and Google Fonts.    Click Above to Contact Me!",
+	'desc': "Welcome! to Ƴunior Ƥortal Ƥortfolio. This is my Ƥrofessional Ƥortfolio. It is Serverless on AWS. Technologies Used: UI: ReactJS, Cross-Browser Compatibility: Babel, Asset Management & Bundling: Webpack, Package Management: NPM, Testing: Jest, Chai & Mocha, AWS - Hosted Serverless, Lambda, Route53, CloudFrontS3, CodeBuild, CodePipeline, Python, Node.js, Git & GitHUB, SSH, HTML/JS, CSS, Font Awesome, and Google Fonts.    Click Above to Contact Me!",
 	'image': {
-		'descO': "My Portfolio On AWS",
+		'descO': "My Ƥortfolio On AWS",
 		'src': "images/example1.png",
 		'comment': ""
 	}
