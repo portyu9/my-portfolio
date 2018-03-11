@@ -24,9 +24,9 @@ class ExampleWorkModal extends React.Component {
 				example.image.src
 			}
 			/> <
-			div className = "color--cloud modal__text" >
+			div className = "modal__text" >
 			<
-			h2 className = "modal__title" > {
+			h2 className = "color--cloud modal__title" > {
 				example.title
 			} <
 			/h2> <
