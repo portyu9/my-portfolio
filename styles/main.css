@@ -169,6 +169,12 @@ h1, h2, h3, h4, h5, h6 {
   Header
 */
 
+.section__heading--medium {
+	float: left;
+	font-size: 4rem;
+	margin-left: 2rem;
+}
+
 .section__heading--largest {
 	float: left;
 	font-size: 5rem;
