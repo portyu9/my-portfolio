@@ -1,6 +1,7 @@
-# Ƴunior Ƥortal's portfolio
+# Ƴunior Ƥortal's Serverless Ƥortfolio
 
 This is my professional portfolio. It uses AWS and ReactJS.
+Hosted ServerLess with S3 and Lambda.
 
 ## Technologies Used:
 UI: React
@@ -11,6 +12,7 @@ Testing: Jest, Chai & Mocha
 AWS - Hosted Serverless
 Lambda
 Route53
+S3
 CloudFrontS3
 CodeBuild
 CodePipeline
