@@ -6,6 +6,10 @@ import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 Enzyme.configure({ adapter: new Adapter() });
 
+const dom = new JSDOM(``, {
+  url: "http://localhost",
+});
+
 const myExample = {
   'title': "AWS Certified",
   'href': "https://example.com",
