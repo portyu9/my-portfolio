@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-	"testEnvironment": "node"
+	"testEnvironment": "node",
     "test": "jest",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
