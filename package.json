@@ -4,6 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
+	"testURL": "http://localhost/",
 	"testEnvironment": "node",
     "test": "jest",
     "webpack": "webpack",
