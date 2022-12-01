@@ -1,6 +1,6 @@
 # Serverless Ƥortfolio
 
-This is my professional portfolio. It uses AWS and ReactJS.
+This is my legacy serverless portfolio. It uses AWS and ReactJS.
 Hosted ServerLess with S3 and Lambda.
 
 ## Technologies Used:
