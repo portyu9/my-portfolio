@@ -1,4 +1,4 @@
-# Ƴunior Ƥortal's Serverless Ƥortfolio
+# Serverless Ƥortfolio
 
 This is my professional portfolio. It uses AWS and ReactJS.
 Hosted ServerLess with S3 and Lambda.
